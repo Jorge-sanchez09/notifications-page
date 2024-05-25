@@ -16,8 +16,8 @@ export const notifications = [
         },
         text: "reacted to your recent post",
         link: {
-            type: "text",
-            text: "My first tournament today!"
+            type: "post",
+            content: "My first tournament today!"
         },
         time: "1m ago", 
         readed: false, 
@@ -41,8 +41,8 @@ export const notifications = [
         },
         text: "has joined your group",
         link: {
-            type: "text",
-            text: "Chess Club"
+            type: "group",
+            content: "Chess Club"
         },
         time: "1 day ago", 
         readed: false, 
@@ -56,7 +56,7 @@ export const notifications = [
         text: "sent you a private message",
         link: {
             type: "message",
-            message: "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+            content: "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
         },
         time: "5 days ago", 
         readed: true, 
@@ -70,7 +70,7 @@ export const notifications = [
         text: "commented on your picture",
         link: {
             type: "image",
-            image: chessImg,
+            content: chessImg,
         },
         time: "1 week ago", 
         readed: true, 
@@ -83,8 +83,8 @@ export const notifications = [
         },
         text: "reacted to your recent post",
         link: {
-            type: "text",
-            text: "5 end-game strategies to increase your win rate",
+            type: "post",
+            content: "5 end-game strategies to increase your win rate",
         },
         time: "2 weeks ago", 
         readed: true, 
@@ -97,8 +97,8 @@ export const notifications = [
         },
         text: "left the group",
         link: {
-            type: "text",
-            text: "Chess Club",
+            type: "group",
+            content: "Chess Club",
         },
         time: "2 weeks ago", 
         readed: true, 
