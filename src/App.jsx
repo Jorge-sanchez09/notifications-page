@@ -62,8 +62,8 @@ const StyledMain = styled.main`
     color: var(--clr-neutral-600);
 
     @media screen and (min-width: 769px){
-        font-size: 1rem;
         border-radius: 1em;
+        padding-inline: 2em;
     }
 `;
 
