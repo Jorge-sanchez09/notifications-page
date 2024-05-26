@@ -43,9 +43,7 @@ export default function Header({onButtonClick, notifications}) {
 
     return (
         <StyledHeader>
-            <p>
-                Notifications <span>{unreadedNotifications}</span>
-            </p>
+            <p>Notifications <span>{unreadedNotifications}</span></p>
             <button onClick={onButtonClick}>Mark all as read</button>
         </StyledHeader>
     );

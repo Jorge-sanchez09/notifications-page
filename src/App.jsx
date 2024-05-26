@@ -57,25 +57,30 @@ const StyledMain = styled.main`
     gap: 1.5em;
     max-width: 730px;
     padding: 1.375em 1em;
-    border-radius: 1em;
     font-family: "Plus Jakarta Sans", sans-serif;
     background-color: var(--clr-neutral-100);
     color: var(--clr-neutral-600);
+
+    @media screen and (min-width: 769px){
+        font-size: 1rem;
+        border-radius: 1em;
+    }
 `;
 
-function App() {
-    const [notificationStatus, setNotificationStatus] = useState(notifications);
+function sortNotifications(notifications){
+    const sortedArray = [...notifications].sort((first, second) => {
+        if(!first.readed && second.readed)
+            return -1;
+        else if(first.readed && !second.readed)
+            return 1;
 
-    function sortNotifications(notifications){
-        return notifications.sort((first, second) => {
-            if(!first.readed && second.readed)
-                return -1;
-            else if(first.readad && !second.readed)
-                return 1;
+        return 0;
+    });
+    return sortedArray;
+}
 
-            return 0;
-        });
-    }
+export default function App() {
+    const [notificationStatus, setNotificationStatus] = useState(sortNotifications(notifications));
 
     function markAllAsRead() {
         setNotificationStatus((prevNotificationStatus) => {
@@ -97,7 +102,7 @@ function App() {
                 } : notification 
             )
             
-            return sortNotifications([...newArr]);
+            return sortNotifications(newArr);
         });
     }
 
@@ -122,5 +127,3 @@ function App() {
         </>
     );
 }
-
-export default App;

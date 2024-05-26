@@ -11,6 +11,10 @@ const StyledNotification = styled.li`
     background-color: ${({$readed}) => $readed ? 'var(--clr-neutral-100)' : 'var(--clr-neutral-300)'};
     cursor: pointer;
 
+    @media screen and (min-width: 769px){
+        font-size: 1rem;
+    }
+
     .container{
         display: grid;
         gap: 0.5em;
@@ -97,7 +101,7 @@ export default function Notification({ id, author, text, link, time, readed, onC
 
     if(link){
         if(link.type === 'post')
-            textLinkClasses = 'text-link post';
+            textLinkClasses = 'text-link';
         else if(link.type === 'group')
             textLinkClasses = 'text-link group';
     }
@@ -105,7 +109,7 @@ export default function Notification({ id, author, text, link, time, readed, onC
     if(textLinkClasses)
         textLink = <a href='#' className={textLinkClasses}>{link.content}</a>
 
-    let notification = (
+    const notification = (
         <div className={`container ${link?.type ==='image' ? 'row' : 'column'}` }>
             <div className="info">
                 <p className='description'>
