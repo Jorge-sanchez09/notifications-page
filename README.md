@@ -50,18 +50,15 @@ Users should be able to:
 
 ### What I learned
 
-This is my first Frontend Mentor challenge using React. It was a good opportunity to practice this library as a I have been learning it for over 2-3 weeks.
+This is my first Frontend Mentor challenge using React. It was a good opportunity to practice this library as I have been learning it for over 2-3 weeks.
 
-I think I got a better grasp at React escential concepts like props and state. Managing notifications state was interesting and I think I did it well enough.
+I believe I gained a better grasp of React's essential concepts like props and state. Managing notifications state was interesting and I think I did it well enough.
 
-As for the styles I decided to use styled-components since this was another technology I've only had a little time to explore so I thought I should use it more often to learn about more styling alternatives.
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Regarding the styles, I decided to use styled-components since it's another technology I've only had a little time to explore, so I thought I should use it more often to learn about more styling alternatives.
 
 ### Continued development
 
-My goal is to keep learning about React and complete harder challenges so I can officially add this technology to my dev stack 
-
+My goal is to continue learning about React and tackle more challenging projects, so I can confidently add this technology to my developer toolkit.
 
 ### Useful resources
 
