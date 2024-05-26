@@ -7,7 +7,7 @@ const StyledNotification = styled.li`
     gap: 1em;
     padding: 1em;
     border-radius: 0.5em;
-    background-color: ${({$readed}) => $readed ? 'var(--clr-neutral-100)' : 'var(--clr-neutral-300)'};
+    background-color: ${({$readed}) => $readed ? 'var(--clr-neutral-100)' : 'var(--clr-neutral-200)'};
     cursor: pointer;
 
     .container{
@@ -51,11 +51,11 @@ const StyledNotification = styled.li`
     .message{
         display: block;
         padding: 1em;
-        border: 1px solid var(--clr-neutral-400);
+        border: 1px solid var(--clr-neutral-300);
         border-radius: 0.25em;
 
         &:is(:hover, :focus){
-            background-color: var(--clr-neutral-400);
+            background-color: var(--clr-neutral-300);
         }
     }
 
