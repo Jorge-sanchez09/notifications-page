@@ -7,13 +7,8 @@ const StyledNotification = styled.li`
     gap: 1em;
     padding: 1em;
     border-radius: 0.5em;
-    font-size: 0.9rem;
     background-color: ${({$readed}) => $readed ? 'var(--clr-neutral-100)' : 'var(--clr-neutral-300)'};
     cursor: pointer;
-
-    @media screen and (min-width: 769px){
-        font-size: 1rem;
-    }
 
     .container{
         display: grid;

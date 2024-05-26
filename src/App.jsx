@@ -33,6 +33,10 @@ const GlobalStyles = createGlobalStyle`
         place-content: center;
         min-height: 100%;
         background-color: var(--clr-neutral-200);
+
+        @media screen and (min-width: 769px) {
+            padding: 4em;
+        }
     }
 
     ol{
@@ -40,6 +44,14 @@ const GlobalStyles = createGlobalStyle`
         list-style: none;
         display: grid;
         gap: 0.75em;
+
+        @media screen and (min-width: 769px) {
+            gap: 0.5em;
+        }
+    }
+
+    button{
+        font-size: inherit;
     }
 
     a{
@@ -56,14 +68,17 @@ const StyledMain = styled.main`
     display: grid;
     gap: 1.5em;
     max-width: 730px;
-    padding: 1.375em 1em;
+    padding: 1.5em 1em;
     font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.9rem;
     background-color: var(--clr-neutral-100);
     color: var(--clr-neutral-600);
 
     @media screen and (min-width: 769px){
+        gap: 2em;
         border-radius: 1em;
-        padding-inline: 2em;
+        padding: 2em 2em 0;
+        font-size: 1rem;
     }
 `;
 

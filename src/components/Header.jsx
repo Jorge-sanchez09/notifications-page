@@ -5,20 +5,24 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
 
-    p{
+    h1{
         display: flex;
         align-items: center;
-        gap: 0.5em;
+        gap: 0.45em;
         font-size: 1.25rem;
         font-weight: 800;
         color: var(--clr-neutral-800);
+
+        @media screen and (min-width: 769px) {
+            font-size: 1.5rem;
+        }
 
         span{
             display: inline-flex;
             align-items: center;
             padding: 0.1em 0.75em;
             border-radius: 0.25em; 
-            font-size: initial;
+            font-size: 1rem;
             color: var(--clr-neutral-100);
             background-color: var(--clr-primary-blue);
         }
@@ -26,7 +30,6 @@ const StyledHeader = styled.header`
 
     button{
         border: none;
-        font-size: 0.9rem;
         color: var(--clr-neutral-600);
         background-color: transparent;
         cursor: pointer;
@@ -43,7 +46,7 @@ export default function Header({onButtonClick, notifications}) {
 
     return (
         <StyledHeader>
-            <p>Notifications <span>{unreadedNotifications}</span></p>
+            <h1>Notifications <span>{unreadedNotifications}</span></h1>
             <button onClick={onButtonClick}>Mark all as read</button>
         </StyledHeader>
     );
